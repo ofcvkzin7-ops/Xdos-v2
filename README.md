@@ -1,13 +1,24 @@
-# DENIS XDOS V1
+# DENIS XDOS EMULATOR V2.1 - PERFORMANCE
 
-Projeto inicial de aplicativo Android em modo paisagem, com desktop demonstrativo inspirado na referência enviada.
+Projeto Android Java/XML com desktop visual simulado em roxo e preto.
 
-## Gerar APK pelo GitHub (usando somente o celular)
-1. Crie um repositório GitHub e envie todos os arquivos desta pasta, mantendo a estrutura.
-2. Abra a aba Actions e permita workflows, se o GitHub pedir.
-3. Execute `Build DENIS XDOS APK` (ou faça um commit na branch main).
-4. Abra a execução concluída e baixe o artifact `DENIS-XDOS-V1-APK`.
-5. Extraia o ZIP do artifact e instale `app-debug.apk` no Android, permitindo instalação dessa fonte se necessário.
+## Melhorias V2.1
+- Animações de transição de janelas do sistema desativadas para reduzir efeitos visuais.
+- Interface simples, sem animações contínuas de ícones.
+- Versão do aplicativo atualizada para 2.1.
+- Filtros de arquitetura ARM 32/64 bits. O projeto usa Java/XML e não inclui bibliotecas nativas próprias.
+- Workflow do GitHub Actions configurado para instalar Gradle 8.9 e compilar o APK.
 
-## Limitações honestas
-Esta V1 é uma interface de desktop simulada em WebView. Não é Windows 11, não é um emulador x86 e ainda não executa programas Windows, Roblox Studio ou FL Studio. Para isso seria necessária uma camada de compatibilidade/emulação apropriada, com limitações importantes de desempenho e compatibilidade no celular.
+## Gerar APK pelo GitHub
+1. Envie todos os arquivos para a branch `main` ou `master`.
+2. Abra **Actions**.
+3. Selecione **DENIS XDOS V2.1 - Android APK**.
+4. Clique em **Run workflow**.
+5. Abra a execução concluída e baixe o artefato **DENIS-XDOS-V2.1-APK**.
+
+O APK estará em `app/build/outputs/apk/debug/app-debug.apk`.
+
+## Limitações
+Esta é uma interface de desktop simulada para Android. Não executa programas de Windows/Linux. Os botões de arquivos, navegador, jogos e notas ainda são demonstrativos.
+
+Requisito mínimo configurado: Android 6.0 (API 23).
